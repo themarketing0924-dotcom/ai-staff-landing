@@ -354,6 +354,18 @@ img{max-width:100%;height:auto}
  .row,.approve{opacity:1!important;transform:none!important}
  .card{padding-top:22px}
 }
+/* 모바일 히어로 균형 조정 (위쪽 여백 복원) */
+@media (max-width:600px){
+ .hero{padding-top:44px}
+ .hero .kick{margin-top:18px;font-size:15px}
+ .hero h1{font-size:9vw;margin-top:14px;line-height:1.12}
+ .hero .sub{font-size:4.6vw;line-height:1.45;margin-top:18px}
+ .hero .sub+.sub{margin-top:10px!important}
+ .hero .cta{margin-top:26px;gap:12px}
+ .hero .cta small{font-size:14px}
+ .eyebrow{padding:8px 16px;font-size:13.5px}
+ .stage{margin-top:30px}
+}
 
 /* ===== C안: 다크 + 오렌지 글로우 ===== */
 :root{--blue:#FF7A1A;--blue-d:#FFB070;--blue-l:rgba(255,122,26,.15);--bg:#1B100A;--ink:#F6EEE8;--ink2:#F0E8E0;--ink3:#D6C8BC;--line:rgba(255,160,90,.2);--shadow:0 1px 0 rgba(255,190,130,.1) inset,0 30px 70px -30px rgba(0,0,0,.7)}
