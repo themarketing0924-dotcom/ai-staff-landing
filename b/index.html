@@ -412,6 +412,9 @@ h2.big{font-size:clamp(26px,2.78vw + 16px,56px)}
 .mbar .btn{white-space:nowrap}
 .row .ic svg{width:32px;height:32px;stroke-width:1.7}
 .row .ic{width:56px;height:56px;border-radius:18px}
+.row .ic svg.rb{width:34px;height:34px;fill:#fff;stroke:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.avatar{border-radius:50%!important;background:#fff!important;box-shadow:0 0 0 1px rgba(0,0,0,.06),0 10px 30px -10px rgba(0,0,0,.35)}
+.avatar img{object-position:50% 50%!important}
 
 /* ===== B안: 애플 맥 스타일 · 가운데 정렬 ===== */
 :root{--blue:#0071e3;--blue-d:#0062c4;--blue-l:#EAF3FE;--bg:#F5F5F7;--ink:#1D1D1F;--ink2:#515154;--ink3:#6E6E73;--line:#D2D2D7;--shadow:none}
@@ -491,15 +494,15 @@ h2.big{font-weight:600;letter-spacing:-.055em}
    <div class="card" id="heroCard">
     <div class="bar"><b>우리 회사 AI 사원팀</b><span>예시 화면</span></div>
     <div class="row" style="--i:0">
-     <span class="ic c-blue"><svg viewBox="0 0 24 24"><path d="M12 7V4"/><circle cx="12" cy="3.2" r="1"/><rect x="4.5" y="7" width="15" height="12" rx="4"/><circle cx="9" cy="12.5" r="1.1"/><circle cx="15" cy="12.5" r="1.1"/><path d="M9.5 16c1.5 1 3.5 1 5 0"/><path d="M2.5 12v3M21.5 12v3"/></svg></span>
+     <span class="ic c-blue"><svg class="rb" viewBox="0 0 12 12" shape-rendering="crispEdges"><path d="M4 0h2v1h-2zM4 1h2v1h-2zM1 2h10v1h-10zM1 3h10v1h-10zM1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h2v1h-2zM5 5h2v1h-2zM9 5h2v1h-2zM1 6h10v1h-10zM1 7h10v1h-10zM2 8h8v1h-8zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2z"/></svg></span>
      <div class="t"><b>SNS 콘텐츠 담당</b><span>이번 주 게시물 초안 작성</span></div><span class="chip">초안 완료</span>
     </div>
     <div class="row" style="--i:1">
-     <span class="ic c-green"><svg viewBox="0 0 24 24"><path d="M9 7V4.5M15 7V4.5"/><rect x="4.5" y="7" width="15" height="12" rx="3"/><path d="M8.5 12.5h2M13.5 12.5h2"/><path d="M8.5 16.5v-1M11 16.5v-2M13.5 16.5v-1.5M16 16.5v-1"/><path d="M2.5 12v3M21.5 12v3"/></svg></span>
+     <span class="ic c-green"><svg class="rb" viewBox="0 0 12 12" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM9 0h1v1h-1zM2 1h1v1h-1zM9 1h1v1h-1zM2 2h8v1h-8zM0 3h12v1h-12zM0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h12v1h-12zM0 7h3v1h-3zM4 7h1v1h-1zM6 7h1v1h-1zM8 7h4v1h-4zM2 8h8v1h-8zM3 9h1v1h-1zM8 9h1v1h-1zM2 10h3v1h-3zM7 10h3v1h-3z"/></svg></span>
      <div class="t"><b>매출 자료 담당</b><span>월별 매출 집계, 청구·입금 대조</span></div><span class="chip">정리 완료</span>
     </div>
     <div class="row" style="--i:2">
-     <span class="ic c-orange"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0"/><rect x="3" y="11.5" width="3" height="5" rx="1.2"/><rect x="18" y="11.5" width="3" height="5" rx="1.2"/><path d="M19.5 16.5v1a2.5 2.5 0 01-2.5 2.5h-3"/><rect x="7" y="9" width="10" height="9" rx="3"/><circle cx="10" cy="13" r="1"/><circle cx="14" cy="13" r="1"/></svg></span>
+     <span class="ic c-orange"><svg class="rb" viewBox="0 0 12 12" shape-rendering="crispEdges"><path d="M2 0h8v1h-8zM1 1h1v1h-1zM10 1h1v1h-1zM0 2h12v1h-12zM0 3h12v1h-12zM0 4h2v1h-2zM3 4h6v1h-6zM10 4h2v1h-2zM0 5h2v1h-2zM3 5h6v1h-6zM10 5h2v1h-2zM0 6h12v1h-12zM0 7h12v1h-12zM2 8h10v1h-10zM8 9h3v1h-3zM2 10h4v1h-4zM8 10h1v1h-1zM2 11h4v1h-4z"/></svg></span>
      <div class="t"><b>고객 응대 담당</b><span>문의 정리와 답변 준비</span></div><span class="chip">답변 준비</span>
     </div>
     <div class="approve" style="--i:3"><div><b>대표 최종 승인</b><br><span>방향은 대표님이, 실행은 AI 사원이</span></div><span class="chip">승인 대기</span></div>
