@@ -199,6 +199,11 @@ h1 .hl>span{display:inline-block}
  .progress{display:none}
  .final::before{display:none}
 }
+/* 스토리 구간: 고정 없이 일반 스크롤로 자연스럽게 */
+.story{height:auto!important;padding:160px 0}
+.story .pin{position:static;min-height:0}
+.js .story p.ln{transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+@media (max-width:820px){.story{padding:104px 0}}
 
 /* ===== C안: 다크 + 오렌지 글로우 ===== */
 :root{--blue:#FF7A1A;--blue-d:#FFB070;--blue-l:rgba(255,122,26,.15);--bg:#1B100A;--ink:#F6EEE8;--ink2:#CDBCAF;--ink3:#A8978A;--line:rgba(255,160,90,.2);--shadow:0 1px 0 rgba(255,190,130,.1) inset,0 30px 70px -30px rgba(0,0,0,.7)}
@@ -284,10 +289,10 @@ section.sec.gray{background:#1B100A}
 
 <section class="story" id="story">
  <div class="pin"><div class="wrap">
-  <p class="ln">회사에서 가장 가치 있는 사람은 대표입니다.</p>
-  <p class="ln">그런데 매일 가장 많은 일을 하는 사람도 대표입니다.</p>
-  <p class="ln">자료 조사부터 수정, 업무 전달까지.</p>
-  <p class="ln last">이제 전문 AI 사원에게 맡기세요.</p>
+  <p class="ln rv">회사에서 가장 가치 있는 사람은 대표입니다.</p>
+  <p class="ln rv d1">그런데 매일 가장 많은 일을 하는 사람도 대표입니다.</p>
+  <p class="ln rv d2">자료 조사부터 수정, 업무 전달까지.</p>
+  <p class="ln last rv d3">이제 전문 AI 사원에게 맡기세요.</p>
  </div></div>
 </section>
 
@@ -407,11 +412,7 @@ var CTA_URL = "";
       card.style.setProperty('--cp', p.toFixed(3));
     }
     if (story) {
-      var r2 = story.getBoundingClientRect();
-      var total = r2.height - vh();
-      var p2 = clamp(-r2.top / (total > 0 ? total : 1), 0, 1);
-      var n = lines.length;
-      lines.forEach(function (ln, i) { ln.classList.toggle('on', p2 > (i / n) * 0.9 + 0.02); });
+      lines.forEach(function (ln) { ln.classList.add('on'); });
     }
     if (fin) {
       var r3 = fin.getBoundingClientRect();
