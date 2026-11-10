@@ -261,6 +261,14 @@ div[style*="margin-top:72px"]{margin-top:44px!important}
  div[style*="margin-top:72px"]{margin-top:32px!important}
  .prof{gap:28px}
 }
+/* 버튼 크기 축소: 헤더 버튼 크기에 맞춤 */
+.btn,.btn.lg{min-height:44px;padding:0 24px;font-size:15px;border-radius:14px}
+.btn.sm{min-height:38px;padding:0 18px;font-size:14px;border-radius:12px}
+@media (max-width:820px){
+ .btn.lg{width:auto;max-width:none;min-height:46px;padding:0 26px;font-size:15px}
+ .btn.sm{min-height:40px}
+ .mbar .btn{width:100%;min-height:46px}
+}
 </style>
 
 <style>.mbar{display:none}@media (max-width:820px){.mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:25;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);transform:translateY(110%);transition:transform .5s cubic-bezier(.22,1,.36,1)}.mbar.show{transform:none}.mbar .btn{width:100%;max-width:none;min-height:50px}body{padding-bottom:0}}@media (prefers-reduced-motion:reduce){.mbar{transition:none}}</style>

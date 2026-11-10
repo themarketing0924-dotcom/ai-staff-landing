@@ -261,6 +261,14 @@ div[style*="margin-top:72px"]{margin-top:44px!important}
  div[style*="margin-top:72px"]{margin-top:32px!important}
  .prof{gap:28px}
 }
+/* 버튼 크기 축소: 헤더 버튼 크기에 맞춤 */
+.btn,.btn.lg{min-height:44px;padding:0 24px;font-size:15px;border-radius:14px}
+.btn.sm{min-height:38px;padding:0 18px;font-size:14px;border-radius:12px}
+@media (max-width:820px){
+ .btn.lg{width:auto;max-width:none;min-height:46px;padding:0 26px;font-size:15px}
+ .btn.sm{min-height:40px}
+ .mbar .btn{width:100%;min-height:46px}
+}
 
 /* ===== C안: 다크 + 오렌지 글로우 ===== */
 :root{--blue:#FF7A1A;--blue-d:#FFB070;--blue-l:rgba(255,122,26,.15);--bg:#1B100A;--ink:#F6EEE8;--ink2:#F0E8E0;--ink3:#D6C8BC;--line:rgba(255,160,90,.2);--shadow:0 1px 0 rgba(255,190,130,.1) inset,0 30px 70px -30px rgba(0,0,0,.7)}
