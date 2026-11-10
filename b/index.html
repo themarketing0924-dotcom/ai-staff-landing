@@ -332,6 +332,11 @@ img{max-width:100%;height:auto}
  .stage{margin-top:40px}
  div[style*="margin-top:72px"] .btn.lg,div[style*="margin-top:44px"] .btn.lg{width:100%}
 }
+/* 마지막 배너: 헤더 그라데이션 + 서브 카피 키워드 강조 */
+.final h2,.final .qg{background:linear-gradient(90deg,#FFFFFF 10%,#FFE9A8 90%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.final p.b{color:#D3E6FF}
+.final p.b .kw{color:#FFE9A8;font-weight:700}
+.final .kw{color:#FFE9A8}
 
 /* ===== B안: 애플 맥 스타일 · 가운데 정렬 ===== */
 :root{--blue:#0071e3;--blue-d:#0062c4;--blue-l:#EAF3FE;--bg:#F5F5F7;--ink:#1D1D1F;--ink2:#515154;--ink3:#6E6E73;--line:#D2D2D7;--shadow:none}
@@ -374,11 +379,13 @@ h2.big{font-weight:600;letter-spacing:-.055em}
 .final{background:radial-gradient(90% 60% at 50% 125%,rgba(0,113,227,.6),rgba(0,0,0,0) 70%),#000}
 .final::before{background:radial-gradient(closest-side,rgba(41,151,255,.16),rgba(41,151,255,0))}
 .final h2{font-weight:600}
+.final h2,.final .qg{background:linear-gradient(90deg,#2997FF,#BF5AF2 55%,#FF9F0A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.final p.b .kw,.final .kw{color:#4DB1FF}
 .final p.b{color:#A1A1A6}.final .q{color:#F5F5F7}.final small{color:#86868B}
 .foot{background:#F5F5F7}
 .kw{color:#0071E3}
 .note .kw{color:#0071E3}
-.final .kw{color:#2997FF}
+.final .kw{color:#4DB1FF}
 @media (prefers-reduced-motion:reduce){.js .story p.ln{color:#F5F5F7}.js .story p.last{background:linear-gradient(90deg,#2997FF,#BF5AF2 55%,#FF9F0A);-webkit-background-clip:text;background-clip:text;color:transparent}}
 </style>
 
@@ -496,9 +503,9 @@ h2.big{font-weight:600;letter-spacing:-.055em}
 <section class="final" id="cta">
  <div class="wrap">
   <h2 class="rv">내일도 같은 일을<br>대표님 혼자 떠안기 전에.</h2>
-  <p class="b rv d1">SNS 콘텐츠를 올리고, 매출 자료를 정리하고, 고객 답변을 준비하고,<br>필요한 자료를 찾아 설명하는 일.<br>지금 대표님이 반복하는 <strong class="kw">업무 하나</strong>를 떠올려 보세요.</p>
-  <p class="q rv d2">어디까지 AI 사원에게 맡기고,<br>무엇을 직접 결정해야 할까요?</p>
-  <p class="b rv d3" style="margin-top:32px">먼저 그 업무 하나를 <strong class="kw">우리 회사만의 AI 사원팀에 맡기는 방법</strong>,<br>영상으로 확인해 보세요.</p>
+  <p class="b rv d1"><strong class="kw">SNS 콘텐츠</strong>를 올리고, <strong class="kw">매출 자료</strong>를 정리하고, <strong class="kw">고객 답변</strong>을 준비하고,<br><strong class="kw">필요한 자료를 찾아 설명하는 일</strong>.<br>지금 대표님이 반복하는 <strong class="kw">업무 하나</strong>를 떠올려 보세요.</p>
+  <p class="q rv d2"><span class="qg">어디까지 AI 사원에게 맡기고,</span><br>무엇을 직접 결정해야 할까요?</p>
+  <p class="b rv d3" style="margin-top:32px">먼저 그 업무 하나를 <strong class="kw">우리 회사만의 AI 사원팀에 맡기는 방법</strong>,<br><strong class="kw">영상으로 확인</strong>해 보세요.</p>
   <div class="cta rv d4">
    <a class="btn wh lg" href="#cta">무료 영상 받기</a>
    <small>소상공인·개인사업자 대상 · <strong class="kw">영상은 무료</strong>로 제공됩니다</small>
