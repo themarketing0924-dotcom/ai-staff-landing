@@ -453,8 +453,6 @@ h2.big{font-size:clamp(26px,2.78vw + 16px,56px)}
 .works .wk .shot em{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:600;font-size:15px;opacity:.55}
 .works .wk .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 
-.books .bk-r{justify-content:center}.books figure{text-align:left}
-@media (max-width:600px){.books .bk-r{align-items:center}}
 /* ===== B안: 애플 맥 스타일 · 가운데 정렬 ===== */
 :root{--blue:#0071e3;--blue-d:#0062c4;--blue-l:#EAF3FE;--bg:#F5F5F7;--ink:#1D1D1F;--ink2:#515154;--ink3:#6E6E73;--line:#D2D2D7;--shadow:none}
 body{letter-spacing:-.025em}
@@ -489,9 +487,11 @@ h2.big{font-weight:600;letter-spacing:-.055em}
 .item{flex-direction:column;align-items:center;text-align:center;gap:18px}
 .item .n{width:auto;font-weight:600;background:linear-gradient(90deg,#0071E3,#7A5AF8);-webkit-background-clip:text;background-clip:text;color:transparent}
 .item p{margin-left:auto;margin-right:auto}
-.prof{flex-direction:column;gap:40px;justify-content:center}
-.prof .tx{flex:none;text-align:center}
-.prof p.d{margin-left:auto;margin-right:auto}
+.prof{flex-direction:column;gap:40px;justify-content:flex-start;align-items:flex-start}
+.prof .tx{flex:none;text-align:left;width:100%}
+.prof p.d{margin-left:0;margin-right:0}
+.prof .kicker,.books .bk-l,.works .bk-l{text-align:left;display:block}.books,.works{text-align:left}.books .bk-r{justify-content:flex-start}.books figure{text-align:left}
+@media (max-width:600px){.books .bk-r{align-items:flex-start}.books figure{align-items:center}}
 .avatar{border-radius:50%;background:#1D1D1F}
 .final{background:radial-gradient(90% 60% at 50% 125%,rgba(0,113,227,.6),rgba(0,0,0,0) 70%),#000}
 .final::before{background:radial-gradient(closest-side,rgba(41,151,255,.16),rgba(41,151,255,0))}
